@@ -1,0 +1,269 @@
+/* Імпортуємо шрифти з інтернету */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+/* Селектор для усіх тегів */
+* {
+  /* Колір тексту - синій */
+  color:blue;
+  /* Зовнішні відступи */
+  margin: 0px;
+  /* Внутрішні відступи */
+  padding: 0px;
+}
+
+/* Селектор для тегу <body> */
+body {
+  /* Колір тексту - чорний */
+  color: black;
+  /* Розмір шрифту - 30 пікселів */
+  font-size: 30px;
+  /* Горизонтальне вирівнювання тексту - по середині */
+  text-align: center;
+  /* Розмір фонового зображення */
+  background-size: 20%;
+  /* Зображення на задньому фоні */
+}
+
+/* Селектор для id <main_block> */
+#main_block {
+  /* Ширина - ширина дочірніх елементів */
+  width: auto;
+  /* Висота - висота дочірніх елементів */
+  height: auto;
+  min-height: 100vh;
+  /* Колір фону */
+  background: #FFFFFFEE;
+  /* Відступи внутрішні - по вертикалі та горизонталі */
+  padding: 3px 5px;
+}
+
+/* Селектор для тегів <h> */
+h1, h2, h3, h4, h5, h6 {
+  /* Колір тексту - помаранчевий */
+  color: orange;
+}
+
+/* Перезапис стилів для <h3> */
+h3 {
+  /* Колір тексту - темно зелений */
+  color: red;
+}
+
+/* Селектор для тегів <p> */
+p {
+  /* Колір тексту - чорний */
+  color:red;
+  /* Розмір шрифту - 80% від значення батьківського тегу */
+  font-size: 80%;
+}
+
+/* Селектор для класу <text_n> */
+.text_n {
+  /* Стиль шрифту - звичайний */
+  font-style: normal;
+}
+
+/* Селектор для класу <text_i> */
+.text_i {
+  /* Стиль шрифту - курсив */
+  font-style: italic;
+}
+
+/* Селектор для класу <text_b> */
+.text_b {
+  /* Вага шрифту - жирний */
+  font-weight: bold;
+}
+
+/* Селектор для класу <text_u> */
+.text_u {
+  /* Вигляд тексту - підкреслений */
+  text-decoration: underline;
+}
+
+/* Селектор для класу <text_lt> */
+.text_lt {
+  /* Вигляд тексту - закреслений */
+  text-decoration: line-through;
+}
+/* Серектор для тегу <p>,
+   який знаходится у тезі <span>,
+   який знаходится у тезі <div>,
+   який знаходится у тезі <body> */
+body div span p {
+  /* Розміру шрифту батьківського тегу * 1.2 */
+  font-size: 1.2em;
+  /* Обробляти даний блок як строковий блок */
+  display: inline-block;
+  /* Зовнішні відступи */
+  margin: 0px 10px;
+}
+
+/* Селектор для класу <pacifico> */
+.pacifico {
+  /* Шрифт тексту - Pacifico */
+  font-family: 'Pacifico', cursive;
+}
+
+/* Селектор для класу <comfortaa> */
+.comfortaa {
+  /* Шрифт тексту - Comfortaa */
+  font-family: 'Comfortaa', cursive;
+}
+
+/* Селектор для класу <lobster> */
+.lobster {
+  /* Шрифт тексту - Lobster */
+  font-family: 'Lobster', cursive;
+}
+
+/* Селектор для класу <caveat> */
+.caveat {
+  /* Шрифт тексту - Caveat */
+  font-family: 'Caveat', cursive;
+}
+
+/* Селектор для класу <uppercase> */
+.uppercase {
+  /* Трансформація тексту - верхній регістр */
+  text-transform: uppercase;
+}
+
+/* Селектор для класу <lowercase> */
+.lowercase {
+  /* Трансформація тексту - нижній регістр */
+  text-transform: lowercase;
+}
+
+/* Селектор для класу <custom_spacing> */
+.custom_spacing {
+  /* Розмір пробілів між словами */
+  word-spacing: 20px;
+  /* Розмір пробілів між літерами */
+  letter-spacing: 10px;
+}
+
+/* Селектор для id <container_for_blocks> */
+#container_for_blocks {
+  /* Розмір шрифту */
+  font-size: 0;
+}
+
+/* Селектор для класу <block_z> */
+.block_z {
+  /* Ширина - 200 пікселів */
+  width: 200px;
+  /* Висота - 200 пікселів */
+  height: 200px;
+  /* Розмір шрифту */
+  font-size: 30px;
+  /* Ширина рамки */
+  border-width: 5px;
+  /* Колір рамки */
+  border-color: #000;
+  /* Обробляти даний блок як строковий блок */ 
+  display: inline-block;
+  /* Зовнішні відступи */
+  margin: 10px 5px;
+  /* Висота рядка - центрує текст по вертикалі */
+  line-height: 200px;
+  /* Прозорість - 90% */
+  opacity: 0.9;
+  /* Заокруглення рамки - по основній та допоміжній діагоналі */
+  border-radius: 0 50%;
+  /* Час анімації для кольорів тексту, фону та рамки */
+  transition: color 1s, background 1s, border-color 1s;
+}
+
+/* Селектор для класу <block_r> */
+.block_r {
+  /* Колір тексту - білий */
+  color: white;
+  /* Колір фону - червоний */
+  background: #FF0000;
+  /* Стиль рамки - суцільна */
+  border-style: solid;
+}
+
+/* Селектор для класу <block_g> */
+.block_g {
+  /* Колір тексту - чорний */
+  color: black;
+  /* Колір фону - зелений */
+  background: #00FF00;
+  /* Стиль рамки - штрихована */
+  border-style: dashed;
+}
+
+/* Селектор для класу <block_b> */
+.block_b {
+  /* Колір тексту - білий */
+  color: white;
+  /* Колір фону - синій */
+  background: #0000FF;
+  /* Стиль рамки - подвійна */
+  border-style: double;
+}
+
+/* Селектор для класу <block_y> */
+.block_y {
+  /* Колір тексту - чорний */
+  color: black;
+  /* Колір фону - жовтий */
+  background: #FFFF00;
+  /* Стиль рамки - точкова */
+  border-style: dotted;
+}
+
+/* Псевдокласи наведення для класів <block_r> та <block_b> */
+.block_r:hover, .block_b:hover {
+  /* Колір тексту - чорний */
+  color: black;
+  /* Колір фону - білий */
+  background: white;
+}
+
+/* Псевдокласи наведення для класів <block_g> та <block_y> */
+.block_g:hover, .block_y:hover {
+  /* Колір тексту - білий */
+  color: white;
+  /* Колір фону - чорний */
+  background: black;
+  /* Колір рамки - білий */
+  border-color: white;
+}
+
+/* Селектор для класу <goto_home> */
+.goto_home {
+  /* Обробляти даний тег як блок */ 
+  display: block;
+  /* Колір тексту - чорний */
+  color: black;
+  /* Зовнішні відступи */
+  margin: 10px auto;
+  /* Колір фону - білий */
+  background: white;
+  /* Забираємо нижнє підкреслення для посилання */
+  text-decoration: none;
+  /* Параметри рамки */
+  border: 3px solid black;
+  /* Заокруглення рамки - 12 пікселів */
+  border-radius: 12px;
+  /* Ширина - 50% */
+  width: 50%;
+  /* Час анімації для кольорів рамки, тексту та фону */
+  transition: border .3s, color .3s, background .3s;
+}
+
+/* Псевдоклас наведення для класу <goto_home> */
+.goto_home:hover {
+  /* Колір тексту - жовтий */
+  color: yellow;
+  /* Колір фону - темно сірий */
+  background: #333;
+  /* Параметри рамки */
+  border: 3px solid #bbb;
+}
